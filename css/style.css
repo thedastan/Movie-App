@@ -1,0 +1,221 @@
+/*ОБНУЛЕНИЕ*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/*Подключение шрифтов*/
+@font-face {
+    font-family: 'Graphik', sans-serif;
+    src: url('../fonts/Graphiklight.otf') format('otf');
+url("../fonts/GraphikMedium.otf") format('otf');
+url("../fonts/GraphikRegular.otf")format('otf');
+url("../fonts/GraphikSemibold.otf")format('otf');
+url("../fonts/GraphikBold.otf")format('otf');
+
+}
+
+
+body {
+    font-family: 'Graphik', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+.container {
+    width: 1170px;
+    margin: auto;
+}
+
+/*header*/
+
+header {
+    position: absolute;
+    width: 100%;
+}
+
+.left-nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.left-nav a {
+    margin: 0 10px;
+}
+
+/*header*/
+
+
+/*hero*/
+
+#hero {
+    background: url("../img/BG.png") no-repeat center/cover;
+    min-height: 100vh;
+    background-attachment: fixed;
+}
+
+.nav-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(29, 29, 29, 0.5);
+    box-shadow: 0 40px 40px 8px rgba(0, 0, 0, 0.16);
+    backdrop-filter: blur(24px);
+    width: 56px;
+    height: 100vh;
+
+}
+
+.nav-bar {
+    margin: 8px 0;
+}
+
+
+.elems {
+    margin-top: -649px;
+}
+
+.stars {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.hero-title {
+    font-weight: 500;
+    font-size: 56px;
+    margin-bottom: 20px;
+    line-height: 64px;
+    color: #FFFFFF;
+}
+
+.hero-description {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 32px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    width: 632px;
+}
+
+.btn-2 {
+    margin-bottom: 20px;
+    box-shadow: 0 16px 16px 4px rgba(0, 0, 0, 0.12);
+    border-radius: 40px;
+    background: transparent;
+    width: 200px;
+    height: 56px;
+    color: #fff;
+    border: 1px dashed #7B61FF;
+}
+.btn-2:hover {
+    background: #fff;
+    color: #000;
+    transition: 0.7s;
+}
+.btn-1 {
+    background: rgba(29, 29, 29, 0.5);
+    width: 111px;
+    height: 24px;
+    margin-bottom: 20px;
+
+    color: #0FEFFD;
+    border-radius: 0 8px;
+}
+
+
+/*hero*/
+
+
+/*MOVIES*/
+#movies {
+    background: #1D1D1D;
+}
+
+.slider-item {
+    margin: 0 15px;
+    position: relative;
+
+}
+
+.movies-hover {
+    opacity: 0;
+    position: absolute;
+    width: 292px;
+    height: 440px;
+    margin-top: -439px;
+    transform: translateY(200px);
+    background: linear-gradient(180deg, rgba(29, 29, 29, 0) 0%, rgba(29, 29, 29, 0.8) 80.79%);
+}
+
+.movies-hover:hover {
+    opacity: 1;
+    transition: 0.7s;
+    transform: translateY(0);
+}
+
+.movies-block {
+    margin-left: 24px;
+    margin-top: 280px;
+}
+
+.film-type {
+    color: #0FEFFD;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 4px 8px;
+    background: rgba(29, 29, 29, 0.5);
+    border-radius: 0 8px;
+    text-decoration: none;
+}
+
+.movies-stars {
+    display: flex;
+    margin: 18px 0;
+}
+
+.film-name {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+    display: flex;
+    align-self: center;
+}
+
+.slick-arrow {
+    position: absolute;
+    z-index: 1;
+}
+
+.slick-prev {
+    font-size: 0;
+    margin-top: 180px;
+    width: 40px;
+    margin-left: 50px;
+    height: 40px;
+    background: url('../img/Icon button.svg') no-repeat center/80px;
+}
+.slick-next {
+    font-size: 0;
+    margin-left: 1400px;
+    margin-top: -250px;
+    width: 40px;
+    height: 40px;
+    background: url('../img/Chevron-Right.svg') no-repeat center/50px;
+}
+/*MOVIES*/
